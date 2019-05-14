@@ -1,0 +1,185 @@
+body {
+    min-height: 300px;
+    padding-top: 60px;
+}
+
+.home-jumbo {
+    color: black;
+    background-color: white;
+    background-image: url('../jumbo-back.png');
+    /*background-image: url('https://i.ytimg.com/vi/QpsF_sOi73M/maxresdefault.jpg');*/
+    text-align: center;
+
+}
+.nav-link{
+    width: 150px;
+}
+
+.navbar-brand{
+    margin-left: 30px;
+    width: 150px;
+}
+.podmenu{
+    list-style: none outside none;
+    width: 150px;
+    background: #343a40;
+    position: absolute;
+    top: 40px;
+    margin: 10px;
+    padding: 10px;
+    display: none;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#err-message {
+    color : red;
+}
+/*calendar*/
+
+/*body {*/
+    /*background: #000;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+/*}*/
+
+/*.responsive-calendar {*/
+    /*color: #fff;*/
+/*}*/
+
+/*.responsive-calendar .controls {*/
+    /*width: 300px;*/
+    /*margin: 0 auto;*/
+    /*padding: 40px 0;*/
+    /*display: table;*/
+/*}*/
+
+/*.responsive-calendar .controls a {*/
+    /*width: 50px;*/
+    /*text-align: center;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.responsive-calendar .controls h4 {*/
+    /*float: left;*/
+    /*width: 200px;*/
+    /*text-align: center;*/
+    /*margin: 0;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*.responsive-calendar .day-headers .header span {*/
+    /*padding: 12px 0;*/
+/*}*/
+
+/*.responsive-calendar .float__left {*/
+    /*float: left;*/
+/*}*/
+
+/*.responsive-calendar .float__right {*/
+    /*float: right;*/
+/*}*/
+
+/*.responsive-calendar a {*/
+    /*color: #fff;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.responsive-calendar-content {*/
+    /*border: solid 1px #8a8a8a;*/
+/*}*/
+
+/*.responsive-calendar .controls {*/
+    /*text-align: center;*/
+/*}*/
+
+/*.responsive-calendar .day-headers,*/
+/*.responsive-calendar .days {*/
+    /*font-size: 0;*/
+/*}*/
+
+/*.responsive-calendar .header span {*/
+    /*display: block;*/
+    /*border: solid 1px #8a8a8a;*/
+/*}*/
+
+/*.responsive-calendar .day {*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*font-size: 14px;*/
+    /*width: 14.285714285714286%;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.responsive-calendar .day a {*/
+    /*background: #707070;*/
+    /*font-size: 2em;*/
+    /*display: block;*/
+    /*cursor: pointer;*/
+    /*padding: 10% 0 10% 0;*/
+    /*border: solid 1px #8a8a8a;*/
+/*}*/
+
+/*.responsive-calendar .day.sat a,*/
+/*.responsive-calendar .day.sun a {*/
+    /*background: #3b3b3b;*/
+    /*color: #8a8a8a;*/
+/*}*/
+
+/*.responsive-calendar .day.holiday a,*/
+/*.responsive-calendar .day.payday a{*/
+    /*background: #f47a21;*/
+/*}*/
+
+
+/*.responsive-calendar .day a:hover {*/
+    /*background: #222;*/
+    /*color: #fff;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.responsive-calendar .day.past,*/
+/*.responsive-calendar .day.upcoming {*/
+    /*opacity: 0.8;*/
+/*}*/
+
+/*.responsive-calendar .month {*/
+    /*float: left;*/
+    /*width: 8.33%;*/
+    /*padding: 40px 0;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*.responsive-calendar .month a.active__month,*/
+/*.responsive-calendar .month a:hover {*/
+    /*color: #f47a21;*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+    /*.responsive-calendar .day a {*/
+        /*font-size: 18px;*/
+    /*}*/
+
+    /*.responsive-calendar .month {*/
+        /*font-size: 12px;*/
+    /*}*/
+/*}*/

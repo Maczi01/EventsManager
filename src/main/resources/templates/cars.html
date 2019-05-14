@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<!--<nav class="navbar navbar-dark bg-primary">-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">Strona główna</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Imprezy
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/">Wszystkie</a>
+                    <a class="dropdown-item" href="/">Przyszłe</a>
+                    <a class="dropdown-item" href="/">Zakończone</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Auta
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Wszystkie</a>
+                    <a class="dropdown-item" href="/osobowe">Osobowe</a>
+                    <a class="dropdown-item" href="/dostawcze">Dostawcze</a>
+                    <a class="dropdown-item" href="/ciezarowe">Ciężarowe</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Pracownicy
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/pracownicy">Wszystkie</a>
+                    <a class="dropdown-item" href="/aktywni">Aktywni</a>
+                    <a class="dropdown-item" href="/nieaktwni">Nieaktywni</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+
+            <li class="nav-item">
+            <a class="nav-link" href="/calendar.html">Kalendarz</a>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-2" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="jumbotron home-jumbo">
+    <div class="container text-center text-black jumbo-container">
+        <h1 class="display-3">Event manager</h1>
+        <p>Baza wykonanych imprez</p>
+    </div>
+</div>
+
+<!-- koniec gornego menu-->
+
+<div class="container container-main">
+    <div class="row">
+        <a href="/">
+            <div class="col-lg-4 col-md-6 mb-4" th:each="cars: ${carDtoList}">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" th:src="${cars.imgUrlPhoto}" width="320" height="280" alt=""
+                                     data-toggle="modal" data-target="#exampleModal"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <span th:text="${cars.name}"></span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true" th:each="cars: ${carDtoList}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <img class="d-block w-100" th:src="${cars.imgUrlPhoto}">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <td>Numer samochodu</td>
+                        <td th:text="${cars.id}"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Pojemność</td>
+                        <td th:text="${cars.capacity}"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Typ nadwozia</td>
+                        <td th:text="${cars.carType}"></td>
+                    </tr>
+                    <tr>
+                        <td>Przebieg</td>
+                        <td th:text="${cars.millage}"></td>
+                    </tr>
+                    </thead>
+                </table>
+
+
+                    <div class="container container-main">
+                        <div class="modal-content">
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary" title="Edytuj">
+                                    <a ng-href="#!user-edit/1" class="text-white" href="#!user-edit/1">
+                                        <i class="fas fa-user-edit"></i>
+                                    </a>
+                                </button>
+                                <button class="btn btn-sm btn-warning" title="Zarządzaj wyposażeniem">
+                                    <a ng-href="#!user-assets/1" class="text-white" href="#!user-assets/1">
+                                        <i class="fas fa-wrench"></i>
+                                    </a>
+                                </button>
+                                <button class="btn btn-sm btn-danger" title="Usuń">
+                                    <i class="fas fa-user-minus"></i>
+                                </button>
+                            </td>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-main">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

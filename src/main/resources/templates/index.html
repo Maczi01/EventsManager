@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Hello, world!</title>
+</head>
+<body>
+<!--<nav class="navbar navbar-dark bg-primary">-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">Strona główna</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Imprezy
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/">Wszystkie</a>
+                    <a class="dropdown-item" href="/">Przyszłe</a>
+                    <a class="dropdown-item" href="/">Zakończone</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Auta
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/samochody">Wszystkie</a>
+                    <a class="dropdown-item" href="/osobowe">Osobowe</a>
+                    <a class="dropdown-item" href="/dostawcze">Dostawcze</a>
+                    <a class="dropdown-item" href="/ciezarowe">Ciężarowe</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Pracownicy
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/pracownicy">Wszystkie</a>
+                    <a class="dropdown-item" href="/aktywni">Aktywni</a>
+                    <a class="dropdown-item" href="/nieaktwni">Nieaktywni</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+
+            <li class="nav-item">
+                <a class="nav-link" href="/calendar.html">Kalendarz</a>
+            </li>
+
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-2" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="jumbotron home-jumbo">
+    <div class="container text-center text-black jumbo-container">
+        <h1 class="display-3">Event manager</h1>
+        <p>Baza wykonanych imprez</p>
+    </div>
+</div>
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <a href="/samochody"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSzzoPXenP7xyJpRJ4Yserfg75nA9Pn9vQyKxJdQdRbAZkhG6Ncg" width="250" height="250"/></a>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <a href="/pracownicy"><img src="https://cdn2.vectorstock.com/i/1000x1000/57/31/employee-icon-male-group-of-persons-symbol-avatar-vector-21605731.jpg" width="250" height="250"/></a>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <a href="/imprezy"> <img src="https://image.flaticon.com/sprites/new_packs/596052-event-agency.png" width="250" height="250"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--mmm-->
+<!--calendar NG-->
+<!--<div>-->
+
+    <!--<span id="ctl00_ctl28_g_f2eacf33_484b_4d69_a87c_029f6636a85a_ctl00_WorkinghoursCalendarControl_titleLbl">Hours for Twardy, Mateusz</span>-->
+    <!--<br>-->
+    <!--<div style="float: left;">-->
+        <!--<table id="ctl00_ctl28_g_f2eacf33_484b_4d69_a87c_029f6636a85a_ctl00_WorkinghoursCalendarControl_reportCalendar" cellspacing="0" cellpadding="2" title="Calendar" style="border-width:1px;border-style:solid;border-collapse:collapse;">-->
+            <!--<tbody><tr><td colspan="7" style="background-color:Silver;"><table cellspacing="0" style="width:100%;border-collapse:collapse;">-->
+                <!--<tbody><tr><td style="width:15%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','V7030')" style="color:Black" title="Go to the previous month">&lt;</a></td><td align="center" style="width:70%;">May 2019</td><td align="right" style="width:15%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','V7091')" style="color:Black" title="Go to the next month">&gt;</a></td></tr>-->
+                <!--</tbody></table></td></tr><tr><th align="center" abbr="Monday" scope="col" style="background-color:White;">Mon</th><th align="center" abbr="Tuesday" scope="col" style="background-color:White;">Tue</th><th align="center" abbr="Wednesday" scope="col" style="background-color:White;">Wed</th><th align="center" abbr="Thursday" scope="col" style="background-color:White;">Thu</th><th align="center" abbr="Friday" scope="col" style="background-color:White;">Fri</th><th align="center" abbr="Saturday" scope="col" style="background-color:White;">Sat</th><th align="center" abbr="Sunday" scope="col" style="background-color:White;">Sun</th></tr><tr><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7058')" style="color:LightGrey" title="29 April">29</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7059')" style="color:LightGrey" title="30 April">30</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7060')" style="color:Black" title="01 May">1</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7061')" style="color:Black" title="02 May">2</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7062')" style="color:Black" title="03 May">3</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7063')" style="color:Black" title="04 May">4</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7064')" style="color:Black" title="05 May">5</a></td></tr><tr><td align="center" style="color:#404040;background-color:#4CBB17;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7065')" style="color:#404040" title="06 May">6</a></td><td align="center" style="color:#404040;background-color:#FFFF00;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7066')" style="color:#404040" title="07 May">7</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7067')" style="color:Black" title="08 May">8</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7068')" style="color:Black" title="09 May">9</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7069')" style="color:Black" title="10 May">10</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7070')" style="color:Black" title="11 May">11</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7071')" style="color:Black" title="12 May">12</a></td></tr><tr><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7072')" style="color:Black" title="13 May">13</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7073')" style="color:Black" title="14 May">14</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7074')" style="color:Black" title="15 May">15</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7075')" style="color:Black" title="16 May">16</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7076')" style="color:Black" title="17 May">17</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7077')" style="color:Black" title="18 May">18</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7078')" style="color:Black" title="19 May">19</a></td></tr><tr><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7079')" style="color:Black" title="20 May">20</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7080')" style="color:Black" title="21 May">21</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7081')" style="color:Black" title="22 May">22</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7082')" style="color:Black" title="23 May">23</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7083')" style="color:Black" title="24 May">24</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7084')" style="color:Black" title="25 May">25</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7085')" style="color:Black" title="26 May">26</a></td></tr><tr><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7086')" style="color:Black" title="27 May">27</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7087')" style="color:Black" title="28 May">28</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7088')" style="color:Black" title="29 May">29</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7089')" style="color:Black" title="30 May">30</a></td><td align="center" style="width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7090')" style="color:Black" title="31 May">31</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7091')" style="color:LightGrey" title="01 June">1</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7092')" style="color:LightGrey" title="02 June">2</a></td></tr><tr><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7093')" style="color:LightGrey" title="03 June">3</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7094')" style="color:LightGrey" title="04 June">4</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7095')" style="color:LightGrey" title="05 June">5</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7096')" style="color:LightGrey" title="06 June">6</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7097')" style="color:LightGrey" title="07 June">7</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7098')" style="color:LightGrey" title="08 June">8</a></td><td align="center" style="color:LightGrey;width:14%;"><a href="javascript:__doPostBack('ctl00$ctl28$g_f2eacf33_484b_4d69_a87c_029f6636a85a$ctl00$WorkinghoursCalendarControl$reportCalendar','7099')" style="color:LightGrey" title="09 June">9</a></td></tr>-->
+            <!--</tbody></table>-->
+    <!--</div>-->
+    <!--<div class="description" style="padding-left: 20px; float: left;">-->
+        <!--<table border="0" cellpadding="1" cellspacing="0">-->
+            <!--<tbody><tr>-->
+                <!--<td colspan="2">-->
+                    <!--<h3>-->
+                        <!--Description:</h3>-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td style="background-color: #4CBB17;-->
+                <!--padding-left: 10px;">-->
+                    <!--&nbsp;-->
+                <!--</td>-->
+                <!--<td style="white-space: nowrap">-->
+                    <!-- -&nbsp;8 hours/day - OK-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td style="background-color: #FFFF00;">-->
+                    <!--&nbsp;-->
+                <!--</td>-->
+                <!--<td style="white-space: nowrap">-->
+                    <!-- -&nbsp;less then 8 hours/day - not enough-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td style="background-color: #FF0000;">-->
+                    <!--&nbsp;-->
+                <!--</td>-->
+                <!--<td style="white-space: nowrap">-->
+                    <!-- -&nbsp;more then 8 hours/day - too much-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--</tbody></table>-->
+    <!--</div>-->
+    <!--<div style="clear: both;">-->
+        <!--&nbsp;</div>-->
+
+<!--</div>-->
+
+<div class="container container-main">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
